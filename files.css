@@ -1,11 +1,53 @@
 /* Styles for index.html */
-body.index-page {
+body.index-page{
 font-family: "Indie Flower", serif;
 background-color: #ffdbe9;
 color: #333;
 text-align:center;
 }
 
+.index-page h1 {
+background-color: #fcc3da;
+color: #333;
+text-align: center;
+font-family: "Indie Flower", serif;
+}
+
+.index-page p {
+background-color: #fcc3da;
+color: #333;
+text-align: center;
+font-family: "Indie Flower", serif;
+}
+
+
+.index-box{
+background-color: #fcc3da;
+border: 1px solid #fcc3da;
+}
+
+/* Styles for about.html */  
+body.about-page{
+font-family: "Patrick Hand", serif;
+background-color: #f9cee7;
+color: #333;
+text-align:left;
+}
+
+.about-page h1, h2, p{
+font-family: "Patrick Hand", serif;
+background-color: #ffa4c8;
+color: #333;
+text-align:left;
+}
+
+
+.about-box{
+background-color: #ffa4c8;
+border: 1px solid #ffa4c8;
+}
+
+/* Grid for index.html */
 .grid-container{
 display:grid;
 grid-template-rows: 1fr 1fr 1fr;
@@ -17,55 +59,13 @@ grid-template-rows: 1fr 1fr 1fr;
     font-size:4em;
 }
 
-
-.index-page h1{
-background-color: #fcc3da;
-color: #333;
-text-align: center;
-font-family: "Indie Flower", serif;
+/* Grid for about.html */
+.grid-container{
+display:grid;
+grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    height:80vh;
+    border-radius: 15px;
+    gap:10px;
+    font-size:4em;
 }
-
-
-.index-page p {
-background-color: #fcc3da;
-color: #333;
-text-align: center;
-font-family: "Indie Flower", serif;
-}
-
-.index-box{
-background-color: #fcc3da;
-border: 1px solid
-
-/* Styles for about.html */  
-body.about-page {
-font-family: "Patrick Hand", serif;
-background-color: #f9cee7;
-color: #333;
-text-align:left;
-}
-
-.about-page h1 {
-font-family: "Patrick Hand", serif;
-background-color: #ffa4c8;
-color: #333;
-text-align:left;
-}
-
-.about-page h2 {
-font-family: "Patrick Hand", serif;
-background-color: #ffa4c8;
-color: #333;
-text-align:left;
-}
-
-.about-page p {
-font-family: "Patrick Hand", serif;
-background-color: #ffa4c8;
-color: #333;
-text-align:left;
-}
-
-.about-box{
-background-color: #fcc3da;
-border: 1px solid
