@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+          <title>Ice cream party!</title>
+          <script src="js/init.js"></script>
+    </head>
+     <body>
+        <h1>You're invited to an ice cream party!</h1>
+        <form action="#" method="POST">
+
+        <p>What is your email address?</p>
+	<label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br>
+
+        <p>What is your phone number?</p>
+	<label for="phonenumber">Phone Number:</label>
+        <input type="number" id="phonenumber" name="phonenumber">
+        <br>
+
+	<p>How many people will you bring with you to the party?</p>
+	<label for="number">Number of People:</label>
+        <input type="number" id="number" name="number">
+        <br>
+
+	<p>What is your favorite ice cream flavor?</p>
+	<input type="radio" id="vanilla" name="radio">
+	<label for="vanilla">Vanilla</label>
+    	<input type="radio" id="chocolatechip" name="radio">
+	<label for="chocolatechip">Chocolate Chip</label>
+        <input type="radio" id="strawberry" name="radio">
+	<label for="strawberry">Strawberry</label>
+	<input type="radio" id="other1" name="radio">
+	<label for="other1">Other</label>
+	<br>
+
+	<p>What toppings do you like?</p>
+	<input type="checkbox" id="sprinkles" name="checkbox">
+	<label for="sprinkles">Sprinkles</label>
+	<input type="checkbox" id="magicshell" name="checkbox">
+	<label for="magicshell">Magic Shellp</label>
+	<input type="checkbox" id="chocolatechips" name="checkbox">
+	<label for="chocolatechips">Chocolate Chip</label>
+	<input type="checkbox" id="gummybear" name="checkbox">
+	<label for="gummybear">Gummy Bear</label>
+	<input type="checkbox" id="other" name="checkbox">
+	<label for="other">Other</label>
+	<br>
+
+  <p>What kind of entertainment should we have at the party?</p>
+  <select id="optionvalue" name="entertainment">
+  <option value="bounce house">Bounce House</option>
+  <option value="clown">Clown</option>
+  <option value="dj">DJ</option>
+  <option value="magician">Magician</option>
+  <option value="balloon animals">Balloon Animals</option>
+  <option value="face painting">Face Painting</option>
+  <option value="cornhole">Cornhole</option>
+</select>
+
+	<p>Do you have any other suggestions or comments?</p>
+	<label for="text">Suggestions and Comments:</label>
+        <input type="text" id="text" name="text">
+        <br>
+        <button onclick="alert('Submit Form!')">Submit!</button>
+
+        </form>
+     </body>
+   </html>
+
