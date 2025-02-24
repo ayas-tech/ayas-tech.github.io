@@ -1,0 +1,69 @@
+/* Gallery page styling */
+ body { 
+	font-family: "Indie Flower", serif; 
+	text-align: center; 
+	background-color: #ffdeeb; /* pink background */ 
+	color: #333; 
+} 
+
+/* Style for the heading */ 
+h1 { 
+	color: #ffb4d4; /* pink */ 
+} 
+
+/* Style for images */ 
+img { 
+	width: 200px; 
+	height: 200px; 
+	display: block; 
+	margin: 10px auto; 
+} 
+
+/* Small image */ 
+.small-image { 
+	width: 100px; 
+	height: 100px; 
+} 
+
+/* Large image */ 
+.large-image { 
+	width: 300px; 
+	height: 300px; 
+} 
+
+/* Rounded corners */ 
+.rounded-image { 
+	border-radius: 15px; 
+} 
+
+/* Shadow effect */ 
+.shadow-image { 
+	box-shadow: 5px 5px 10px gray; 
+} 
+
+/* Slightly transparent */ 
+.transparent-image { 
+	opacity: 0.7; 
+} 
+
+/* Blur effect */ 
+.blur-image { 
+	filter: blur(3px); 
+} 
+
+/* Grayscale effect */ 
+.grayscale-image { 
+	filter: grayscale(100%); 
+} 
+
+/* Object-fit contain */ 
+.contain-image { 
+	object-fit: contain; 
+	border: 2px solid #ffa4c8; 
+} 
+
+/* Object-fit cover */ 
+.cover-image { 
+	object-fit: cover; 
+	border: 2px solid #ffa4c8; 
+}
