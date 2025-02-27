@@ -69,3 +69,27 @@ grid-template-rows: 1fr 1fr 1fr;
     gap:10px;
     font-size:4em;
 }
+
+/* Styles for projects.html */
+body.index-page{
+font-family: "Indie Flower", serif;
+background-color: #ffdbe9;
+color: #333;
+text-align:center;
+}
+
+.projects-page body {
+background-color: #fcc3da;
+color: #333;
+text-align: center;
+font-family: "Indie Flower", serif;
+}
+
+.projects-page p {
+background-color: #fcc3da;
+color: #333;
+text-align: center;
+font-family: "Indie Flower", serif;
+}
+
+
