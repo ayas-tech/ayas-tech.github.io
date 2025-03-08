@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8">
+     <h1>My portrait</h1>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="files.css">	 
+</head> 
+<body> 
+
+<canvas id="myCanvas" width="400" height="400"
+style="border:1px solid pink;"></canvas> 
+
+<script> 
+	const = document.getElementById("myCanvas"); 
+	constctx = canvas.getContext("2d"); 
+
+	// Face (a big circle) 
+	ctx.fillStyle = "#fdd1e2"; 
+	ctx.beginPath(); 
+	ctx.arc(200, 200, 100, 0, Math.PI * 2); 
+	ctx.fill(); 
+
+	// Eyes (two small circles) 
+	ctx.fillStyle = "black"; 
+	ctx.beginPath(); 
+	ctx.arc(170, 180, 10, 0, Math.PI * 2); 
+	ctx.fill(); 
+
+	ctx.beginPath(); 
+	ctx.arc(230, 180, 10, 0, Math.PI * 2); 
+	ctx.fill(); 
+
+	// Smile (a half-circle) 
+	ctx.strokeStyle = "red"; 
+	ctx.beginPath(); 
+	ctx.arc(200, 220, 40, 0, Math.PI); 
+	ctx.stroke(); 
+</script> 
+
+</body> 
+</html>
