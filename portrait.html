@@ -2,26 +2,35 @@
 <html lang="en"> 
 <head> 
 <meta charset="UTF-8">
-     <h1>My portrait</h1>
+     <title>My portrait</title>
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+     <link href="favicon.jpg" rel="shortcut icon" type="image/x-icon" />
 <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="files.css">	 
 </head> 
 <body> 
-
+<h1>My Portrait</h1>
 <canvas id="myCanvas" width="400" height="400"
 style="border:1px solid pink;"></canvas> 
 
 <script> 
-	const = document.getElementById("myCanvas"); 
-	constctx = canvas.getContext("2d"); 
+	const c = document.getElementById("myCanvas"); 
+	const ctx = c.getContext("2d"); 
+	
+	// Draw Hair
+        ctx.fillStyle = "#9d2932";
+        ctx.beginPath();
+        ctx.moveTo(120, 100);
+        ctx.lineTo(100, 300);
+        ctx.quadraticCurveTo(200, 550, 300, 300);
+        ctx.lineTo(280, 100);
+        ctx.fill();
 
 	// Face (a big circle) 
-	ctx.fillStyle = "#fdd1e2"; 
+	ctx.fillStyle = "#ffdbac"; 
 	ctx.beginPath(); 
-	ctx.arc(200, 200, 100, 0, Math.PI * 2); 
+	ctx.arc(200, 200, 80, 0, Math.PI * 2); 
 	ctx.fill(); 
 
 	// Eyes (two small circles) 
@@ -39,6 +48,22 @@ style="border:1px solid pink;"></canvas>
 	ctx.beginPath(); 
 	ctx.arc(200, 220, 40, 0, Math.PI); 
 	ctx.stroke(); 
+
+	// Draw Eyebrows
+	ctx.strokeStyle = "#5c4033"; 
+	 ctx.lineWidth = 4; 
+	 ctx.beginPath(); 
+	 ctx.moveTo(165, 165);
+
+	// Left eyebrow
+	ctx.lineTo(185, 160);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.moveTo(215, 160); 
+
+	// Right eyebrow
+	ctx.lineTo(235, 165);
+	ctx.stroke();
 </script> 
 
 </body> 
