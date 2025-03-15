@@ -1,0 +1,58 @@
+body { 
+ display: flex; 
+ justify-content: center; 
+ align-items: center; 
+ height: 100vh; 
+ background-color: #ffebf3; 
+} 
+ .face { 
+ width: 200px; 
+ height: 200px; 
+ background-color: yellow; 
+ border-radius: 50%; 
+ position: relative; 
+ display: flex; 
+ justify-content: center; 
+ align-items: center; 
+ box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+ } 
+
+.eye { 
+ width: 20px; 
+ height: 20px; 
+ background-color: black; 
+ border-radius: 50%; 
+ position: absolute; top: 60px;
+ } 
+
+ .left-eye { left: 60px;
+ } 
+
+.right-eye { 
+ width: 30px; 
+ height: 5px; 
+ background-color: black; 
+ border-radius: 50%; 
+ top: 65px; 
+ left: 120px;
+ } 
+
+ .mouth { 
+ width: 80px; 
+ height: 40px; 
+ background-color: black; 
+ border-radius: 0 0 50px 50px; 
+ position: absolute; 
+ bottom: 40px; 
+ animation: smile 1s infinite alternate;
+ } 
+
+@keyframes smile { 
+ 0% { 
+ transform: scale(1); 
+} 
+
+ 100% { 
+ transform: scale(1.1);
+ }
+ }
