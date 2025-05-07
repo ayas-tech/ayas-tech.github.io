@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Ping Pong</title>
+	 <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link rel="icon" href="favicon.jpg" type="image/jpeg">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="files.css">
+
+	<style> 
+         canvas{
+                border:1px solid;
+                }
+        </style>
+        </head>
+        <body>
+<h1>Ping Pong</h1>
+<p>By:Aya.K</p>
+<canvas id="myCanvas" width="500" height="300"></canvas>
+<script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Draw black rectangle
+    ctx.fillStyle = "black";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    // Draw white line in the middle
+    ctx.strokeStyle = "white";
+    ctx.lineWidth = 5;
+    ctx.beginPath();
+    ctx.moveTo(0, canvas.height / 2);
+    ctx.lineTo(canvas.width, canvas.height / 2);
+    ctx.stroke();
+
+    // Draw small light pink ball
+    ctx.fillStyle = "lightpink";
+    ctx.beginPath();
+    ctx.arc(100, 100, 8, 0, Math.PI * 2); // (x, y, radius, startAngle, endAngle)
+    ctx.fill();
+
+    // Draw white rectangles
+    const rectWidth = 50, rectHeight = 10;
+    ctx.fillStyle = "white";
+    ctx.fillRect(canvas.width / 2 - rectWidth / 2, 40, rectWidth, rectHeight); // Top white rectangle (higher up)
+    ctx.fillRect(canvas.width / 2 - rectWidth / 2, canvas.height - 50, rectWidth, rectHeight); // Bottom white rectangle (closer to bottom edge)
+</script>
+
+
+</body>
+</html>
