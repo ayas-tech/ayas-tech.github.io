@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<title>Animation</title>
+	<style>
+	 canvas{
+		border:1px solid;
+		}
+	</style>
+	</head>
+	<body>
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+
+let x = 0;
+let dx = 5;
+let y = 0;
+
+
+//define functions
+function drawRect(x,y) {
+    console.log("drawing rect");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'pink';
+    ctx.fillRect(x,y,50,50);
+    ctx.fill();
+}
+
+function animate() {
+    drawRect(x,50);
+
+    // TODO: Add some code here 
+    //  that will change the rectangle's position
+     x = x + 5;
+     y = y + 1;
+
+//if the box goes off the right side of the screen
+//reset it to the initial position
+if(x > 350){
+dx = dx * -1;
+    requestAnimationFrame(animate);
+}
+
+//call our function
+animate();
+</body>
+</html>
