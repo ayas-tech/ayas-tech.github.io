@@ -4,5 +4,5 @@
 4.Its a one person game, the ball moves, you can move 1 paddle
 5.My game will be pink themed
 
-You can view my proposal here ->[My Ping Pong Proposal] (https://ayas-tech.github.io/pingpong.html) 
+You can view my proposal here ->[My Ping Pong Proposal](https://ayas-tech.github.io/pingpong.html) 
                               
