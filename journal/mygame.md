@@ -3,5 +3,5 @@
 3.The player will just use the lft and right keys to get the paddle to move, while the ball is just flying around.
 4.Its a one person game, the ball moves, you can move 1 paddle
 5.My game will be pink themed
-You can view my proposal here ->
+You can view my proposal here ->file:///Users/1024474/Desktop/website/index.html 
                               
